@@ -70,7 +70,7 @@
   </section>
 
   <!--About-->
-  <section id="about">
+  <section id="about" data-aos="fade-up">
 
      <!--Title -->
     <div class="text-center mb-5 about">
@@ -244,7 +244,7 @@
   </div>
 </section>
 
-<section id="portfolio" class="portfolio text-center py-5">
+<section id="portfolio" class="portfolio text-center py-5" data-aos="fade-up">
     <div class="text-center mb-5 about">
      <i class="cib-sketch"></i>
       <span class="badge text-danger aboutButton">PORTFOLIO</span>
@@ -260,154 +260,133 @@
       <button class="btn btn-filter" type="button" data-filter="web">Web</button>
     </div>
 
-    <div class="row" id="portfolio-row">
+    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="masonry">
+                    <div class="masonry-item" data-category="app">
+                        <img src="image/1.jpg" alt="App 1">
+                        <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                          <div>
+                            <h6 class="mb-0 text-dark text-start">App 1</h6>
+                            <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                          </div>
+                          <div class="d-flex gap-2">
+                          <a href="image/1.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                          <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div>
+                    </div>
 
-        <div class="col">
-          <div class="portfolio-item my-4 mx-1 show" data-category="app">
-            <div class="portfolio-wrap position-relative overflow-hidden">
-              <img src="image/1.jpg" alt="Product 1" class="img-fluid">
-              <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-                <div>
-                  <h6 class="mb-0 text-dark text-start">App 1</h6>
-                  <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-                </div>
-                <div class="d-flex gap-2">
-                <a href="image/1.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="portfolio-item my-4 mx-1 show" data-category="web">
-            <div class="portfolio-wrap position-relative overflow-hidden">
-              <img src="image/6.jpg" alt="Product 6" class="img-fluid">
-              <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-                <div>
-                  <h6 class="mb-0 text-dark text-start">Branding 2</h6>
-                  <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-                </div>
-                <div class="d-flex gap-2">
-                  <a href="image/6.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="masonry-item" data-category="web"><img src="image/6.jpg" alt="Card 1"  >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                         <div>
+                              <div>
+                              <h6 class="mb-0 text-dark text-start">Branding 2</h6>
+                              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <a href="image/6.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        </div></div>
 
-      <div class="col">
-          <div class="portfolio-item my-4 mx-1 show" data-category="card">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/2.jpg" alt="Product 2" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">Product 1</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/2.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="portfolio-item my-4 mx-1 show" data-category="card">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/5.jpg" alt="Product 5" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">Product 2</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/5.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="portfolio-item my-4 mx-1 show " data-category="web">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/9.jpg" alt="Product 9" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">Branding 3</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/9.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-      </div>
 
-      <div class="col">
-          <div class="portfolio-item my-4 mx-1 show" data-category="web">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/3.jpg" alt="Product 3" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">Branding 1</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                    <div class="masonry-item" data-category="card"><img src="image/2.jpg" alt="Web 1" >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                            <div>
+                              <div>
+                              <h6 class="mb-0 text-dark text-start">Product 1</h6>
+                              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <a href="image/2.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                            </div>
+                        </div></div>
+
+                    <div class="masonry-item" data-category="card"><img src="image/5.jpg" alt="App 2" >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                             <div>
+                                <div>
+                                <h6 class="mb-0 text-dark text-start">Product 2</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/5.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                              </div>
+                        </div></div>
+
+                    <div class="masonry-item" data-category="web"><img src="image/9.jpg" alt="Card 2">
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0 text-dark text-start">Branding 3</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/9.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                        </div></div>
+
+
+                    <div class="masonry-item" data-category="web"><img src="image/3.jpg" alt="Web 2" >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                             <div>
+                                <h6 class="mb-0 text-dark text-start">Branding 1</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/3.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                        </div></div>
+
+
+                    <div class="masonry-item" data-category="app"><img src="image/4.jpg" alt="Web 2" >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                              <div>
+                                <h6 class="mb-0 text-dark text-start">App 2</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/4.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="masonry-item" data-category="app"><img src="image/7.jpg" alt="Web 2" >
+                         <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                              <div>
+                                <h6 class="mb-0 text-dark text-start">App 3</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/7.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                        </div>
+                      </div>
+
+                    <div class="masonry-item" data-category="card"><img src="image/8.jpg" alt="Web 2" >
+                    <div class="overlay position-absolute w-100 d-flex justify-content-between align-items-center">
+                              <div>
+                                <h6 class="mb-0 text-dark text-start">Product 3</h6>
+                                <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <a href="image/8.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
+                                <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
+                              </div>
+                        </div></div>
+
+                </div>
             </div>
-            <div class="d-flex gap-2">
-              <a href="image/3.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="portfolio-item my-4 mx-1 show" data-category="app">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/4.jpg" alt="Product 4" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">App 2</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/4.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="portfolio-item my-4 mx-1 show" data-category="app">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/7.jpg" alt="Product 7" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">App 3</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/7.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="portfolio-item my-4 mx-1 show" data-category="card">
-               <div class="portfolio-wrap position-relative overflow-hidden">
-          <img src="image/8.jpg" alt="Product 8" class="img-fluid">
-          <div class="portfolio-info position-absolute bottom-0 start-0 w-100 p-3 d-flex justify-content-between align-items-center">
-            <div>
-              <h6 class="mb-0 text-dark text-start">Product 3</h6>
-              <p class=" mb-0 text-muted">Lorem ipsum dolor sit</p>
-            </div>
-            <div class="d-flex gap-2">
-              <a href="image/8.jpg" class="fs-4 text-muted glightbox"><i class="bi bi-zoom-in"></i></a>
-              <a href="#" class="fs-4 text-muted"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div>
-          </div>
-      </div>
-   </div>
-      
+
 </section>
 <section id="pricing" class="pricing py-5" data-aos="fade-up">
   <div class="container">
@@ -501,7 +480,7 @@
   </div>
 </section>
 
-<section data-aos="fade-up">
+<section data-aos="fade-up" >
   <div class=" text-center mb-5 about">
      <i class="cib-sketch"></i>
       <span class="badge text-danger aboutButton">FREQUENTLY ASKED QUESTIONS</span>
@@ -579,7 +558,7 @@
   </div>
 </div>
 </section>
-<section id="team" class="container">
+<section id="team" class="container" data-aos="fade-up">
   <div class="text-center mb-5 about ">
      <i class="cib-sketch"></i>
       <span class="badge text-danger aboutButton">TEAM</span> 
@@ -816,10 +795,10 @@
     </div>
 
     <!-- Right Side (Form) -->
-    <div class="col-md-8 contact-form">
+    <div class="col-lg-8 col-md-10 col-12 contact-form">
       <form>
         <div class="row mb-3">
-          <div class="col-md-6 sec1">
+          <div class="col-md-6 mb-3 mb-md-0">
             <input type="text" class="form-control" placeholder="Your Name" required>
           </div>
           <div class="col-md-6">
@@ -918,13 +897,7 @@
 </footer>
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, 
-    once: true      
-  });
-</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="js/effect.js"></script>
