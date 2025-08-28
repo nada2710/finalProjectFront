@@ -381,18 +381,17 @@ border: 1px solid #ddd;   /* لون الحدود رمادي فاتح */
   }
   .teamsec
   {
-    display: flex;
-     gap: 20px;
-      flex-wrap: wrap;
-      padding-left: 140px;
-  padding-right: 90px;
-  text-align: center;
+    
+     
+     
+    
+  
   
 }
 
 .cardteam {
   position: relative;
-  width: 19rem;
+  
   
   overflow: hidden;
   border-radius: 8px;
@@ -428,7 +427,10 @@ border: 1px solid #ddd;   /* لون الحدود رمادي فاتح */
   color: #4e4e4e;
   font-size: 18px;
 }
-
+.social-icons a:hover
+{
+  color: ;
+}
 .cardteam:hover .social-icons {
   opacity: 1;
 }
@@ -521,12 +523,76 @@ textarea:focus {
 }
 
 
-    .contact-form button {
-      background: #e84561;
-      color: #fff;
-      border: none;
-      border-radius: 50px;
-      padding: 10px 30px;
-    }
-    .contact-form button:hover {
-      background: #fc92a6;}
+.contact-form button {
+  background: #e84561;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  }
+ .contact-form button:hover {
+   background: #fc92a6;}
+.aboutfooter p
+{
+  font-size:14px;
+}
+.footer-links a
+{
+  color: #bbb;
+  
+
+}
+.footer-links li :hover
+{
+  color: #e84561 !important;
+}
+
+.FooterBottom
+{
+  background-color: #121212;
+  font-size: 14px;
+}
+.footer-contact p{
+  font-size: 15px;
+
+
+}
+.social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background-color: #030303;
+  color: #535353; ;  
+  font-size: 14px;
+  transition: 0.4s ease;
+  border: 2px solid #5c5a5a;
+}
+
+.social-links a :hover
+{
+  color: #e84561 !important;
+  border: #e84561 !important ;
+
+}
+ .masonry {
+    columns: 3; /* عدد الأعمدة */
+    column-gap: 1rem;
+  }
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+ 
+  .overlay {
+    background: rgba(255, 105, 180, 0.7); /* pink شفاف */
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .masonry-item:hover .overlay {
+    opacity: 1;
+  }
